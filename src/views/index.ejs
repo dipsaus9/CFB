@@ -1,4 +1,35 @@
 <% include base/head.ejs %>
 <main>
+  <section class="start-screen">
+    <h2>Order your food</h2>
+    <button class="start-screen_action">Begin</button>
+  </section>
+  <section class="cycle-info">
+  </section>
+  <section class="cycle-choice">
+    <form action="/prefrence" method="post" autocomplete="off">
+      <label class="fish" for="fish">
+        <input id="fish" type="radio" name="choice" value="fish"/>
+        <div class="icon">
+        </div>
+      </label>
+      <label class="worms" for="worms">
+        <input id="worms" type="radio" name="choice" value="worms"/>
+        <div class="icon">
+        </div>
+      </label>
+      <label class="plants" for="plants">
+        <input id="plants" type="radio" name="choice" value="plants"/>
+        <div class="icon">
+        </div>
+      </label>
+      <label class="bacteria" for="bacteria">
+        <input id="bacteria" type="radio" name="choice" value="bacteria"/>
+        <div class="icon">
+        </div>
+      </label>
+      <input type="submit" />
+    </form>
+  </section>
 </main>
 <% include base/footer.ejs %>

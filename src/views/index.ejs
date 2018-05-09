@@ -1,93 +1,105 @@
 <% include base/head.ejs %>
 
 <main>
-  <!--state 1-->
-  <section class="start-screen">
-    <h1>Cafe de Ceuvel</h1>
-    <h2>Cyclus food builder</h2>
-  </section>
+    <!--state 1-->
+    <section class="start-screen">
+        <h1>Cafe de Ceuvel</h1>
+        <h2>Cyclus food builder</h2>
+    </section>
 
-  <!--state 2-->
-  <section class="cycle-info">
-    <div class="header">
-      <h3>Info before you order</h3>
-    </div>
-    <div class="content">
-      <h4>The Cycle</h4>
-      <img src="/img/cycleoverview.png" alt="Cyclus img">
-      <p>De cyclus bij de Greenhouse zorgt er voor dat we zelfvoorzienend zijn in het voorzien van het eten in het restaurant. Elk element uit de cyclus heeft op verschillende ingredienten effect.</p>
-      <a href="#">Ik wil meer weten</a>
-      <a href="#" class="btn btn-main">Start</a>
-    </div>
-  </section>
-
-  <!--state 3-->
-  <section class="cycle-choice">
-    <div class="header">
-      <a href="#" class="back"></a>
-      <h3>Select an element that's in the cycle</h3>
-      <a href="#" class="info"></a>
-    </div>
-
-    <form action="/prefrence" method="post" autocomplete="off">
-      <label class="fish" for="fish">
-        <input id="fish" type="radio" name="choice" value="fish"/>
-        <div class="icon">
+    <!--state 2-->
+    <section class="cycle-info">
+        <div class="container">
+            <div class="header">
+                <h3>Info before you order</h3>
+            </div>
+            <div class="content">
+                <h4>The Cycle</h4>
+                <img src="/img/cycleoverview.png" alt="Cyclus img">
+                <p>De cyclus bij de Greenhouse zorgt er voor dat we zelfvoorzienend zijn in het voorzien van het eten in
+                    het restaurant. Elk element uit de cyclus heeft op verschillende ingredienten effect.</p>
+                <a href="#">Ik wil meer weten</a>
+                <a href="#" class="btn btn-main">Start</a>
+            </div>
         </div>
-      </label>
+    </section>
 
-      <label class="worms" for="worms">
-        <input id="worms" type="radio" name="choice" value="worms"/>
-        <div class="icon">
+    <!--state 3-->
+    <section class="cycle-choice">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="back"></a>
+                <h3>Select an element that's in the cycle</h3>
+                <a href="#" class="info"></a>
+            </div>
+
+            <form action="/prefrence" method="post" autocomplete="off">
+                <label class="fish" for="fish">
+                    <input id="fish" type="radio" name="choice" value="fish"/>
+                    <div class="icon">
+                    </div>
+                </label>
+
+                <label class="worms" for="worms">
+                    <input id="worms" type="radio" name="choice" value="worms"/>
+                    <div class="icon">
+                    </div>
+                </label>
+
+                <label class="plants" for="plants">
+                    <input id="plants" type="radio" name="choice" value="plants"/>
+                    <div class="icon">
+                    </div>
+                </label>
+
+                <label class="bacteria" for="bacteria">
+                    <input id="bacteria" type="radio" name="choice" value="bacteria"/>
+                    <div class="icon">
+                    </div>
+                </label>
+
+                <input type="submit"/>
+
+            </form>
         </div>
-      </label>
+    </section>
 
-      <label class="plants" for="plants">
-        <input id="plants" type="radio" name="choice" value="plants"/>
-        <div class="icon">
+    <!--info overlay-->
+    <section class="overlay">
+        <div class="contaienr">
+            <div class="header">
+                <h4>More about the cycle</h4>
+            </div>
+
+            <div class="content-block">
+                <img src="/img/bacteria.svg" alt="bacteria">
+                <h4>1. Bacteria</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio
+                    dapibus non.</p>
+            </div>
+
+            <div class="content-block">
+                <img src="/img/plants.svg" alt="plants">
+                <h4>2. Plants</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio
+                    dapibus non.</p>
+            </div>
+
+            <div class="content-block">
+                <img src="/img/worms.svg" alt="worms">
+                <h4>3. Worms</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio
+                    dapibus non.</p>
+            </div>
+
+            <div class="content-block">
+                <img src="/img/fish.svg" alt="fish">
+                <h4>4. Fish</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio
+                    dapibus non.</p>
+            </div>
         </div>
-      </label>
-
-      <label class="bacteria" for="bacteria">
-        <input id="bacteria" type="radio" name="choice" value="bacteria"/>
-        <div class="icon">
-        </div>
-      </label>
-
-      <input type="submit" />
-
-    </form>
-  </section>
-
-  <section class="overlay">
-    <div class="header">
-      <h4>More about the cycle</h4>
-    </div>
-
-    <div class="content-block">
-      <img src="/img/bacteria.svg" alt="bacteria">
-      <h4>1. Bacteria</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio dapibus non.</p>
-    </div>
-
-    <div class="content-block">
-      <img src="/img/plants.svg" alt="plants">
-      <h4>2. Plants</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio dapibus non.</p>
-    </div>
-
-    <div class="content-block">
-      <img src="/img/worms.svg" alt="worms">
-      <h4>3. Worms</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio dapibus non.</p>
-    </div>
-
-    <div class="content-block">
-      <img src="/img/fish.svg" alt="fish">
-      <h4>4. Fish</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus bibendum justo, nec suscipit odio dapibus non.</p>
-    </div>
-  </section>
+    </section>
 </main>
 
 <% include base/footer.ejs %>

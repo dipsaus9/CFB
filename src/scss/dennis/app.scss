@@ -1,0 +1,16 @@
+.results-start{ width: 100vw; height: 100vh; max-width: 100%; max-height: 100%;
+  .slide{ height: 100vh; position: relative; background: $color-general; display: flex; flex-direction: column; align-items: center;
+    &-image{ width: 25%; margin: 0 auto; position: relative; margin-top: 25vh;
+      img{ width: 100%; height: auto; border-radius: 50%; }
+    }
+    h2{ margin-top: 15px; transform: rotate(3deg); }
+  }
+}
+.contolers{
+  span{ position: absolute; top: calc(25vh + 20px); width: 40px; height: 40px; background: transparent; left: 20px; display: block; z-index: $up; transform-origin: center center; cursor: pointer;
+    &:after{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(-45deg); position: absolute; left: 0; top: 26px; border-radius: 5px 0 5px 5px; }
+    &:before{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(45deg); position: absolute; left: 0; top: 9px; border-radius: 5px 5px 0 5px; }
+    &.next{ right: 20px; left: auto;}
+    &.back{ transform: rotate(180deg); }
+  }
+}

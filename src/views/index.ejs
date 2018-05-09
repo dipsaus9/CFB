@@ -18,7 +18,7 @@
                 <img src="/img/cycleoverview.png" alt="Cyclus img">
                 <p>De cyclus bij de Greenhouse zorgt er voor dat we zelfvoorzienend zijn in het voorzien van het eten in
                     het restaurant. Elk element uit de cyclus heeft op verschillende ingredienten effect.</p>
-                <a href="overlay" class="btn">Ik wil meer weten</a>
+                <a href="#overlay" class="btn">Ik wil meer weten</a>
                 <a href="#" class="btn btn-main">Start</a>
             </div>
         </div>
@@ -33,31 +33,28 @@
                 <a href="#" class="info"></a>
             </div>
 
-            <form action="/prefrence" method="post" autocomplete="off">
+            <form action="/preference" method="post" autocomplete="off">
                 <label class="fish" for="fish">
                     <input id="fish" type="radio" name="choice" value="fish"/>
-                    <div class="icon">
-                    </div>
+                    <img src="/img/fish.svg" alt="fish icon">
                 </label>
 
                 <label class="worms" for="worms">
                     <input id="worms" type="radio" name="choice" value="worms"/>
-                    <div class="icon">
-                    </div>
+                    <img src="/img/worms.svg" alt="worms icon">
                 </label>
 
                 <label class="plants" for="plants">
                     <input id="plants" type="radio" name="choice" value="plants"/>
-                    <div class="icon">
-                    </div>
+                    <img src="/img/plants.svg" alt="plants icon">
                 </label>
 
                 <label class="bacteria" for="bacteria">
                     <input id="bacteria" type="radio" name="choice" value="bacteria"/>
-                    <div class="icon">
-                    </div>
+                    <img src="/img/bacteria.svg" alt="bacteria icon">
                 </label>
 
+                <!--On change button type submit met JS fixen zodat je meteen doorgaat-->
                 <input type="submit"/>
 
             </form>

@@ -24,8 +24,6 @@ section {
   min-height: 100vh;
   text-align: center;
   max-width: 40em;
-  display: flex;
-  align-items: center;
 }
 
 .container {
@@ -68,6 +66,17 @@ section {
 .cycle-info {
   img {
     max-height: 30vh;
+  }
+}
+
+//Cycle choice
+.cycle-choice {
+  img {
+    max-width: 25vw;
+  }
+
+  form {
+    padding: $space-m 0;
   }
 }
 

@@ -9,5 +9,7 @@ for(let i = 0; i < allArticles.length; i++){
 $('.results-start').slick({
   infinite: true,
   slidesToShow: 1,
-  initialSlide: number
+  initialSlide: number,
+  prevArrow: $('.back'),
+  nextArrow: $('.next')
 });

@@ -1,12 +1,12 @@
 <% include base/head.ejs %>
+<div class="contolers">
+  <span class="back">
+  </span>
+  <span class="next">
+  </span>
+</div>
 <section class="results-start">
   <article class="slide <% if('fish' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %><% } %> fish">
-    <div class="contolers">
-      <span class="back">
-      </span>
-      <span class="next">
-      </span>
-    </div>
     <div class="slide-image">
       <img src="/img/fish.svg" alt="Image of element" />
     </div>
@@ -17,12 +17,6 @@
     <button class="big-button fish-button">Ingredients by Fish</button>
   </article>
   <article class="slide <% if('bacteria' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> bacteria">
-    <div class="contolers">
-      <span class="back">
-      </span>
-      <span class="next">
-      </span>
-    </div>
     <div class="slide-image">
       <img src="/img/bacteria.svg" alt="Image of element" />
     </div>
@@ -33,28 +27,16 @@
     <button class="big-button fish-button">Ingredients by Bacteria</button>
   </article>
   <article class="slide <% if('enviroment' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> enviroment">
-    <div class="contolers">
-      <span class="back">
-      </span>
-      <span class="next">
-      </span>
-    </div>
     <div class="slide-image">
       <img src="/img/fish.svg" alt="Image of element" />
     </div>
-    <h2>Enviroment/h2>
+    <h2>Enviroment</h2>
     <p>
       Momenteel zijn er <span class="big-text">23.000</span> vissen uit de grachten gehaald
     </p>
     <button class="big-button fish-button">Ingredients by Enviroment</button>
   </article>
   <article class="slide <% if('plants' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <%} %> plants">
-    <div class="contolers">
-      <span class="back">
-      </span>
-      <span class="next">
-      </span>
-    </div>
     <div class="slide-image">
       <img src="/img/plants.svg" alt="Image of element" />
     </div>

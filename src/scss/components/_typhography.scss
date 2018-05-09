@@ -18,9 +18,9 @@ $second-font-weights: (
 
 $font-bold: map-get($main-font-weights,Bold);
 
-$second-font: "Histelvetica";
-$second-font-name: "Histelvetica_";
-$second-font-family: #{$main-font},sans-serif;
+$second-font: "Hipstelvetica";
+$second-font-name: "Hipstelvetica-";
+$second-font-family: #{$second-font},sans-serif;
 // include main font
 @include font-list($second-font,$second-font-name,$second-font-weights,normal);
 
@@ -35,5 +35,5 @@ h6{ font-size: rem(14); line-height: 32px; font-weight: $font-bold; }
 
 
 body{
-  font-family: $second-font-family; color: #000; font-size: rem(16); letter-spacing: 0px; line-height: 1; font-weight: $font-book;
+  font-family: $second-font-family; color: #000; font-size: rem(16); letter-spacing: 0px; line-height: 1;
 }

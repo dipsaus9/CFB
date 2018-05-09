@@ -1,1 +1,9 @@
-body{ margin: 0; padding: 0; }
+@import
+  "components/functions",
+  "components/reset",
+  "components/colors",
+  "components/typhography",
+  "components/zindex";
+
+.icon{ width: 25px; height: 25px; background: red; border-radius: 50%; }
+input:checked + .icon{ background: green; }

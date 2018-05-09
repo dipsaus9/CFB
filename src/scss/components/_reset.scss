@@ -1,0 +1,45 @@
+/*  Base values */
+$base-img-dir: "../img"; //
+$base-font-size: 16; //
+$base-line-height: 1.5; //
+$base-letter-spacing: 50; //
+$base-fontpath: "../fonts"; //
+
+// this value may vary for each font
+
+/*  Main values */
+$space: 20px; //
+
+
+/*  Animation */
+$transition-time: 0.3; //
+$transition: #{$transition-time}s; //
+$cubic-bezier: cubic-bezier(0.75,0.75,0.25,0.50); //
+$bezier: $cubic-bezier;
+
+a{
+	text-decoration: none; color: inherit;
+}
+
+*{
+	-webkit-appearance: none; outline: none; outline: none; box-sizing: border-box; -webkit-overflow-scrolling: touch; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -webkit-backface-visibility: hidden;
+	&:focus{
+		outline: none;
+	}
+	&:invalid{
+		box-shadow: none;
+	}
+	&:-moz-submit-invalid{
+		box-shadow: none;
+	}
+	&:-moz-ui-invalid{
+		box-shadow: none;
+	}
+}
+
+ul, li{
+	margin: 0; padding: 0; list-style-type: none;
+}
+body, html{
+	width: 100%; max-width: 100%; margin: 0; padding: 0; color: #000; font-size: 16px; font-size: 100%;
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: $color-general;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, {
+  color: $white;
+}
+
+section {
+  min-height: 100vh;
+  text-align: center;
+  max-width: 40em;
+}
+
+.container {
+  padding: $space;
+}
+
+.header {
+  text-align: center;
+}
+
+//Start screen
+.start-screen {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  //background-image: url("/");
+}
+
+// Cycle info
+.cycle-info {
+  img {
+    max-height: 30vh;
+  }
+}

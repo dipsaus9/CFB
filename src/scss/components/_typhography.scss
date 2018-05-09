@@ -1,17 +1,28 @@
 $main-font-weights: (
-	"Book": 400,
+	"Medium": 400,
 	"Bold": 700,
 );
 
 $font-book: map-get($main-font-weights,Book);
 $font-bold: map-get($main-font-weights,Bold);
 
-$main-font: "CircularStd";
-$main-font-name: "CircularStd-";
+$main-font: "Raleway";
+$main-font-name: "Raleway-";
 $main-font-family: #{$main-font},sans-serif;
 // include main font
 @include font-list($main-font,$main-font-name,$main-font-weights,normal);
-// @include font-include($main-font,$main-font-name,normal,normal);
+
+$second-font-weights: (
+	"Bold": 700,
+);
+
+$font-bold: map-get($main-font-weights,Bold);
+
+$second-font: "Histelvetica";
+$second-font-name: "Histelvetica_";
+$second-font-family: #{$main-font},sans-serif;
+// include main font
+@include font-list($second-font,$second-font-name,$second-font-weights,normal);
 
 // headers
 h1, h2,h3,h4,h5,h6{ font-family: $main-font-family; text-align: left; padding: 0; margin: 0; font-weight: $font-bold; color: #000; }

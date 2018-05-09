@@ -55,6 +55,24 @@ const recipe = [
     'description': 'gerookte Schipholgans, geserveerd op een desembroodje met zuur, gekarameliseerde sjalotjes en een mierikswortel-yoghurt saus'
   },
   {
+    'name': 'KLEURRIJKE BLOEMKOOL SALADE',
+    'ingredients': [
+      'Kruiden uit eigen tuin',
+      'Citroenmelisse dressing',
+      'Dadels',
+      'Amandel creamcheese',
+    ],
+    'extra': [
+      'Geitenkaas',
+      'Brood'
+    ],
+    'cycle': [
+      'Plants',
+      'Bacteria',
+    ],
+    'description': 'met verse groene kruiden, gekarameliseerde rabarber, citroenmelisse dressing en dadels gevuld met amandel creamcheese'
+  },
+  {
     'name': 'CEUVEL KEBAB',
     'ingredients': [
       'oesterzwam',
@@ -72,7 +90,76 @@ const recipe = [
       'Worms'
     ],
     'description': 'döner kebab van oesterzwam op een pita met ingemaakt rode kool, harissa, kool salade, soyaïoli en gemarineerde gegrilde groentjes'
-  }
+  },
+  {
+    'name': 'SALADE VAN MEERVAL',
+    'ingredients': [
+      'Meerval',
+      'Tomaten',
+      'Augurk',
+      'Sladressing',
+      'Veldsla',
+      'moezelwijn'
+    ],
+    'extra': [],
+    'cycle': [
+      'Plants',
+      'Fish'
+    ],
+    'description': 'Lekker eenvoudige salade met een minder gekende zoetwatervis'
+  },
+  {
+    'name': 'GEVULDE KOOL',
+    'ingredients': [
+      'koolbladeren',
+      'Shiitake',
+      'Noten',
+      'Zaden',
+      'Kervel',
+      'Pastinaak',
+      'Boerenkool',
+      'Paddenstoelen-miso jus'
+    ],
+    'extra': [],
+    'cycle': [
+      'Plants',
+      'Bacteria'
+    ],
+    'description': 'pakketjes van groene koolbladeren gevuld met shiitake, noten & zaden, kervel en pastinaak, gefrituurde boerenkool en een paddenstoelen-miso jus'
+  },
+  {
+    'name': 'HARTIGE WORTEL TARTELETTE',
+    'ingredients': [
+      'Baby worteltjes',
+      'Kervelwortels',
+      'Mizuna blaadjes',
+      'Zaden',
+      'Mierikswortelyoghurt saus'
+    ],
+    'extra': [],
+    'cycle': [
+      'Plants',
+      'Bacteria'
+    ],
+    'description': 'met geroosterde baby worteltjes & kervelwortels, mizuna blaadjes en mierikswortelyoghurt saus'
+  },
+  {
+    'name': 'BISQUE VAN RIVIERKREEFT',
+    'ingredients': [
+      'Rivierkreeft uit de Amsterdamse grachten',
+      'Tomaat',
+      'Dragon',
+      'Room',
+      'Port'
+    ],
+    'extra': [],
+    'cycle': [
+      'Bacteria',
+      'Fish',
+      'Environment'
+    ],
+    'description': 'soepje van rivierkreeftjes uit de Amsterdamse grachten, tomaat, dragon, room en port'
+  },
 ];
 
 module.exports = recipe;

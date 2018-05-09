@@ -1,5 +1,10 @@
 <% include base/head.ejs %>
-<main>
-  <h1><%= data %></h1>
-</main>
+<section class="results-start">
+
+  <% for(let i = 0; i < data.data.length; i++){ %>
+    <article class="slide <% (data.data[i].role.toLowerCase() === data.answer) ? 'slide-index-active' : '' %> <%= data.data[i].role.toLowerCase() %>">
+      <h1><%= data.data[i].role %></h1>
+    </article>
+    <% } %>
+</section>
 <% include base/footer.ejs %>

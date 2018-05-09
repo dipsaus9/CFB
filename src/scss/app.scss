@@ -7,3 +7,8 @@
 
 .icon{ width: 25px; height: 25px; background: red; border-radius: 50%; }
 input:checked + .icon{ background: green; }
+
+.results-start{ width: 100vw; height: 100vh; max-width: 100%; max-height: 100%;
+  .slide{ height: 100vh; position: relative; background: orange;
+  }
+}

@@ -4,11 +4,11 @@ const router = express.Router();
 const recipe = require('../recipe.js');
 const fakeData = require('../fakeData.js');
 
-router.get('/prefrence', function(req, res){
+router.get('/preference', function(req, res){
   res.render('index.ejs', {data: ''});
 });
 
-router.post('/prefrence', function(req, res){
+router.post('/preference', function(req, res){
   let answer = req.body.choice;
   if(answer){
     // let recipes = [];

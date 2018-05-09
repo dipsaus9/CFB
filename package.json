@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "concurrently \"npm run serverWatch\" \"npm run  watch-css\" \"npm run babelWatch\"",
     "start": "node ./server/app.js",
-    "build": "npm run clean && mkdir public && concurrently \"npm run build-css\" \"npm run copyJs\" \"npm run copyImages\"",
+    "build": "npm run clean && mkdir public && concurrently \"npm run build-css\" \"npm run copyJs\" \"npm run copyImages\" \"npm run copyFonts\"",
     "copyImages": "copyfiles -u 1 src/img/*.* public",
+    "copyFonts": "copyfiles -u 1 src/fonts/*.* public",
     "copyJs": "copyfiles -u 1 src/js/*.* public",
     "build-css": "node-sass src/scss/app.scss public/css/app.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",

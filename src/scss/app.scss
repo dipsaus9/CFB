@@ -5,6 +5,10 @@
   "components/typhography",
   "components/zindex";
 
+@import
+  "dennis/app",
+  "jamal/app";
+
 .icon{ width: 25px; height: 25px; background: red; border-radius: 50%; }
 input:checked + .icon{ background: green; }
 

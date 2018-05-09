@@ -8,7 +8,10 @@ $base-fontpath: "../fonts"; //
 // this value may vary for each font
 
 /*  Main values */
-$space: 20px; //
+$space: 15px;
+$space-s: $space;
+$space-m: calc(#{$space} * 2);
+$space-l: calc(#{$space} * 3);
 
 
 /*  Animation */

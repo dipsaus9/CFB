@@ -1,0 +1,49 @@
+body {
+  background-color: $color-general;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, {
+  color: $white;
+}
+
+//General section styles
+section {
+  min-height: 100vh;
+  text-align: center;
+  max-width: 40em;
+}
+
+.container {
+  padding: $space-m;
+}
+
+.header {
+  text-align: center;
+}
+
+//Button & custom link styles
+.btn {
+  padding: $space-s;
+  text-align: center;
+  background-color: $color-button;
+  border-radius: 50px;
+}
+
+//Start screen
+.start-screen {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  //background-image: url("/");
+}
+
+// Cycle info
+.cycle-info {
+  img {
+    max-height: 30vh;
+  }
+}

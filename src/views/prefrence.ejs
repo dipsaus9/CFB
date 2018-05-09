@@ -14,7 +14,7 @@
     <p>
       Momenteel zijn er <span class="big-text">30</span> vissen in onze tank
     </p>
-    <button class="big-button fish-button">Ingredients by Fish</button>
+    <button class="btn-main fish-button">Ingredients by Fish</button>
   </article>
   <article class="slide <% if('bacteria' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> bacteria">
     <div class="slide-image">
@@ -24,7 +24,7 @@
     <p>
       Momenteel zijn er <span class="big-text">312.124.542</span> Bacterien in de tank
     </p>
-    <button class="big-button fish-button">Ingredients by Bacteria</button>
+    <button class="btn-main fish-button">Ingredients by Bacteria</button>
   </article>
   <article class="slide <% if('enviroment' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> enviroment">
     <div class="slide-image">
@@ -34,7 +34,7 @@
     <p>
       Momenteel zijn er <span class="big-text">23.000</span> vissen uit de grachten gehaald
     </p>
-    <button class="big-button fish-button">Ingredients by Enviroment</button>
+    <button class="btn-main fish-button">Ingredients by Enviroment</button>
   </article>
   <article class="slide <% if('plants' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <%} %> plants">
     <div class="slide-image">
@@ -44,7 +44,7 @@
     <p>
       Momenteel zijn er <span class="big-text">400</span> planten in onze kas
     </p>
-    <button class="big-button fish-button">Ingredients by Plants</button>
+    <button class="btn-main fish-button">Ingredients by Plants</button>
   </article>
 </section>
 <% include base/footer.ejs %>

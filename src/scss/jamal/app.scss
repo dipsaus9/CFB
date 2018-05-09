@@ -46,10 +46,45 @@ section {
   text-transform: uppercase;
   font-weight: bold;
 
-  &.btn-main {
+  &-main {
     background-color: $color-button;
-    padding: $space-s;
+    padding: $space-s 25px;
     max-width: calc(320px - #{$space-s});
+    box-shadow: none;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem(18);
+    letter-spacing: .5px;
+    line-height: 1;
+    position: relative;
+    transition: $transition;
+    clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0% 50%);
+    // &:before{
+    //   content: '';
+    //   display: block;
+    //   background: inherit;
+    //   width: 20px;
+    //   height: 100%;
+    //   position: absolute;
+    //   left: -19px;
+    //   top: 0;
+    //   clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    // }
+    // &:after{
+    //   content: '';
+    //   display: block;
+    //   background: inherit;
+    //   width: 20px;
+    //   height: 100%;
+    //   position: absolute;
+    //   left: calc(100% - 1px);
+    //   top: 0;
+    //   clip-path: polygon(100% 50%, 0 100%, 0 0);
+    // }
+    &:hover{
+      background: darken($color-button, 10%);
+    }
   }
 }
 

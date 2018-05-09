@@ -3,7 +3,11 @@
     &-image{ width: 25%; margin: 0 auto; position: relative; margin-top: 25vh;
       img{ width: 100%; height: auto; border-radius: 50%; }
     }
-    h2{ margin-top: 15px; transform: rotate(3deg); }
+    h2{ margin-top: 25px; transform: rotate(3deg); font-size: 2rem;}
+    p{ width: 100%; max-width: calc(100% - 40px); font-size: rem(18); margin-top: 15px;
+      .big-text{ display: block; font-size: 3rem; padding: 20px 0; font-weight: $font-bold; }
+    }
+    button{ margin-top: 20px; }
   }
 }
 .contolers{

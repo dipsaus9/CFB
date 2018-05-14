@@ -36,19 +36,19 @@ for(let i = 0; i < sectionButtons.length; i++){
         for(let k = 0; k < sectionsSwitch.length; k++){
             sectionsSwitch[k].classList.remove('active');
         }
-        console.log(this);
-        console.log(this.classList.contains('cycle-info'));
+        console.log(e.target);
+        console.log(e.target.classList.contains('cycle-info'));
 
         switch (true) {
-            case e.target.classList.contains('cycle-info'):
+            case this.classList.contains('cycle-info'):
                 console.log('cycle-info');
                 document.querySelector('section.cycle-info').classList.add('active');
                 break;
-            case e.target.classList.contains('cycle-choice'):
+            case this.classList.contains('cycle-choice'):
                 console.log('cycle-choice');
                 document.querySelector('section.cycle-choice').classList.add('active');
                 break;
-            case e.target.classList.contains('overlay'):
+            case this.classList.contains('overlay'):
                 console.log('overlay');
                 document.querySelector('section.overlay').classList.add('active');
                 break;

@@ -32,9 +32,7 @@ section {
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 //Button & custom link styles
@@ -90,10 +88,27 @@ section {
 }
 
 //header
+.info img, .btn-back img {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
 .info, .btn-back {
+  position: absolute;
+  top: 0;
   display: flex;
-  max-width: 1em;
-  max-height: 1em;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.info {
+  right: 0;
+}
+
+.btn-back {
+  left: 0;
 }
 
 //Start screen

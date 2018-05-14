@@ -41,6 +41,7 @@ for(let i = 0; i < resultButtons.length; i++){
         break;
     }
   });
+}
 
 // autosubmit radio button
 $('.preference').change(function(){
@@ -49,33 +50,28 @@ $('.preference').change(function(){
 
 // timeout toggle
 setTimeout(function() {
-    document.querySelector('.start-screen').classList.remove('active')
-    document.querySelector('.cycle-info').classList.add('active')
-    },10
-);
+  document.querySelector('.start-screen').classList.remove('active');
+  document.querySelector('.cycle-info').classList.add('active');
+},10);
 
 // toggle
 let sectionButtons = document.querySelectorAll('section button');
 let sectionsSwitch = document.querySelectorAll('main.index section');
 for(let i = 0; i < sectionButtons.length; i++){
-    sectionButtons[i].addEventListener('click', function(e){
-        for(let k = 0; k < sectionsSwitch.length; k++){
-            sectionsSwitch[k].classList.remove('active');
-        }
-        switch (true) {
-            case this.classList.contains('cycle-info'):
-                console.log('cycle-info');
-                document.querySelector('section.cycle-info').classList.add('active');
-                break;
-            case this.classList.contains('cycle-choice'):
-                console.log('cycle-choice');
-                document.querySelector('section.cycle-choice').classList.add('active');
-                break;
-            case this.classList.contains('overlay'):
-                console.log('overlay');
-                document.querySelector('section.overlay').classList.add('active');
-                break;
-        }
-    });
-
+  sectionButtons[i].addEventListener('click', function(){
+    for(let k = 0; k < sectionsSwitch.length; k++){
+      sectionsSwitch[k].classList.remove('active');
+    }
+    switch (true) {
+      case this.classList.contains('cycle-info'):
+        document.querySelector('section.cycle-info').classList.add('active');
+        break;
+      case this.classList.contains('cycle-choice'):
+        document.querySelector('section.cycle-choice').classList.add('active');
+        break;
+      case this.classList.contains('overlay'):
+        document.querySelector('section.overlay').classList.add('active');
+        break;
+    }
+  });
 }

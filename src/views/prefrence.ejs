@@ -66,13 +66,21 @@
     </div>
     <div class="result-content">
       <h3>Select your favorite ingredients</h3>
-      <ul>
+      <form>
         <% for(let k = 0; k < data.recipe.length; k++){  %>
+          <% var maxNr = 0; %>
           <% for(let j = 0; j < data.recipe[k].cycle.length; j++){ %>
             <% if(data.recipe[k].cycle[j].toLowerCase() === data.data[i].role.toLowerCase()){ %>
-              <li>
-                <%= data.recipe[k].name %>
-              </li>
+              <% if(maxNr < 4){ %>
+                <% var randomNr = Math.floor(Math.random() * data.recipe[k].ingredients.length); %>
+                <% var className = data.recipe[k].ingredients[randomNr].toLowerCase().split(' ').join('_'); %>
+                <label for="<%= className %>">
+                  <input id="<%= className %>" type="radio" name="ingredients" value="<%= data.recipe[k].ingredients[randomNr] %>"/>
+                  <%= data.recipe[k].ingredients[randomNr] %>
+                </label>
+                <%= maxNr %>
+                <% maxNr = maxNr + 1; %>
+              <% } %>
             <% } %>
           <% } %>
         <% } %>

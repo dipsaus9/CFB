@@ -44,7 +44,7 @@ for(let i = 0; i < resultButtons.length; i++){
 }
 
 // autosubmit radio button
-$('.preference').change(function(){
+$('.preference input').change(function(){
     $('form').submit();
 });
 

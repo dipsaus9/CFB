@@ -2,37 +2,35 @@
 
 <main class="index">
     <!--state 1-->
-    <section class="start-screen">
+    <section class="start-screen active">
         <h1>Cafe de Ceuvel</h1>
         <h2>Cyclus food builder</h2>
     </section>
 
     <!--state 2-->
-    <section class="cycle-info">
+    <section id="cycle-info" class="cycle-info">
         <div class="container">
             <div class="header">
-                <a class="btn-back" href="/"><img src="img/chevleft.svg" alt=""></a>
                 <h3>Info before you order</h3>
-                <a class="info" href="/"><img src="img/info.svg" alt="info"></a>
             </div>
             <div class="content">
                 <h4>The Cycle</h4>
                 <img src="/img/cycleoverview.png" alt="Cyclus img">
                 <p>De cyclus bij de Greenhouse zorgt er voor dat we zelfvoorzienend zijn in het voorzien van het eten in
                     het restaurant. Elk element uit de cyclus heeft op verschillende ingredienten effect.</p>
-                <a href="#overlay" class="btn">Ik wil meer weten</a>
-                <a href="#" class="btn btn-main">Start</a>
+                <button class="btn overlay">Ik wil meer weten</button>
+                <button class="btn-main cycle-choice">Start</button>
             </div>
         </div>
     </section>
 
     <!--state 3-->
-    <section class="cycle-choice">
+    <section id="cycle-choice" class="cycle-choice">
         <div class="container">
             <div class="header">
-                <a href="#" class="back"></a>
+                <button class="btn-back cycle-info" href="/"><img src="img/chevleft.svg" alt=""></button>
                 <h3>Select an element that's in the cycle</h3>
-                <a href="#" class="info"></a>
+                <button class="info overlay"><img src="img/info.svg" alt="info"></button>
             </div>
 
             <form name="preference" action="/preference" method="post" autocomplete="off">
@@ -64,6 +62,9 @@
         <div class="container">
             <div class="header">
                 <h3>More about the cycle</h3>
+                <button class="btn-close cycle-choice">
+                    <img src="img/close.svg" alt="close">
+                </button>
             </div>
 
             <div class="content-block">
@@ -95,6 +96,14 @@
             </div>
         </div>
     </section>
+
+    <div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+    </div>
 </main>
 
 <% include base/footer.ejs %>

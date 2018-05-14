@@ -21,6 +21,13 @@ h3 {
   line-height: 1.3;
 }
 
+.index input, button, submit {
+  border: none;
+  background-color: rgba(215, 40, 40, 0.0);
+  color: #fff;
+  font-size: 1em;
+}
+
 //General section styles
 .container {
   padding: $space-m;
@@ -31,6 +38,14 @@ h3 {
 }
 
 //Button & custom link styles
+button {
+  margin: auto;
+  img {
+    width: 1em;
+    height: 1em;
+  }
+}
+
 .btn {
   text-align: center;
   display: block;
@@ -90,6 +105,7 @@ h3 {
 }
 
 .header {
+  margin: 0 -20px;
   .info, .btn-back, .btn-close {
     position: absolute;
     top: 0;
@@ -99,6 +115,10 @@ h3 {
     height: 1.5em;
   }
 
+  h3 {
+    padding: 0 20px;
+  }
+
   .info, .btn-close {
     right: 0;
   }
@@ -106,6 +126,8 @@ h3 {
   .btn-back {
     left: 0;
   }
+
+
 }
 
 //Start screen
@@ -142,10 +164,13 @@ h3 {
 }
 
 //Overlay
-.content-block {
-  padding: $space-m 0;
-  img {
-    max-width: 40vw;
+.overlay {
+  overflow-y: scroll;
+  .content-block {
+    padding: $space-m 0;
+    img {
+      max-width: 40vw;
+    }
   }
 }
 

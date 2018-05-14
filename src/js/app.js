@@ -15,3 +15,8 @@ $('.results-start').slick({
   speed: 300,
   dots: true
 });
+
+// autosubmit radio button
+$('input').change(function(){
+    $('form').submit();
+});

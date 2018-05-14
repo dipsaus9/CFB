@@ -11,7 +11,9 @@
     <section class="cycle-info">
         <div class="container">
             <div class="header">
+                <a class="btn-back" href="/"><img src="img/chevleft.svg" alt=""></a>
                 <h3>Info before you order</h3>
+                <a class="info" href="/"><img src="img/info.svg" alt="info"></a>
             </div>
             <div class="content">
                 <h4>The Cycle</h4>
@@ -33,7 +35,7 @@
                 <a href="#" class="info"></a>
             </div>
 
-            <form action="/preference" method="post" autocomplete="off">
+            <form name="preference" action="/prefrence" method="post" autocomplete="off">
                 <label class="fish" for="fish">
                     <input id="fish" type="radio" name="choice" value="fish"/>
                     <img src="/img/fish.svg" alt="fish icon">
@@ -53,10 +55,6 @@
                     <input id="bacteria" type="radio" name="choice" value="bacteria"/>
                     <img src="/img/bacteria.svg" alt="bacteria icon">
                 </label>
-
-                <!--On change button type submit met JS fixen zodat je meteen doorgaat-->
-                <input type="submit"/>
-
             </form>
         </div>
     </section>

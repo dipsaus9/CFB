@@ -11,14 +11,6 @@ router.get('/preference', function(req, res){
 router.post('/preference', function(req, res){
   let answer = req.body.choice;
   if(answer){
-    // let recipes = [];
-    // for(let i = 0; i < recipe.length; i++){
-    //   for(let k = 0; k < recipe[i].cycle.length; k++){
-    //     if(recipe[i].cycle[k].toLowerCase() === answer.toLowerCase()){
-    //       recipes.push(recipe[i]);
-    //     }
-    //   }
-    // }
     let obj = {
       data: fakeData,
       recipe: recipe,

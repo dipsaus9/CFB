@@ -13,8 +13,8 @@ const routerSettings = {
         this.configureRoutes();
     },
     basicSettings: function(){
-        http.listen(3004, function () {
-            console.log('server is running on port 3004');
+        http.listen(1900, function () {
+            console.log('server is running on port 1900');
         });
         app.use(express.static('public'));
         app.use(bodyParser.json());

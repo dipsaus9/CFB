@@ -20,6 +20,14 @@ h3 {
   line-height: 1.3;
 }
 //Button & custom link styles
+button {
+  margin: auto;
+  img {
+    width: 1em;
+    height: 1em;
+  }
+}
+
 .btn {
   text-align: center;
   display: block;
@@ -85,8 +93,6 @@ main.index{
     position: relative;
   }
 
-
-
   //header
   .info img, .btn-back img, .btn-close img {
     display: block;
@@ -95,6 +101,7 @@ main.index{
   }
 
   .header {
+    margin: 0 -20px;
     .info, .btn-back, .btn-close {
       position: absolute;
       top: 0;
@@ -103,7 +110,9 @@ main.index{
       width: 1.5em;
       height: 1.5em;
     }
-
+    h3{
+      padding: 0 20px; 
+    }
     .info, .btn-close {
       right: 0;
     }
@@ -134,13 +143,20 @@ main.index{
       max-height: 30vh;
     }
   }
-
+  .overlay {
+    overflow-y: scroll;
+    .content-block {
+      padding: $space-m 0;
+      img {
+        max-width: 40vw;
+      }
+    }
+  }
   //Cycle choice
   .cycle-choice {
     img {
       max-width: 25vw;
     }
-
     form {
       padding: $space-m 0;
     }
@@ -153,7 +169,7 @@ main.index{
       max-width: 40vw;
     }
   }
-  
+
   section {
     position: absolute;
     margin: auto;

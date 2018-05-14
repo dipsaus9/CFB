@@ -46,7 +46,6 @@ if(document.querySelector('main.pref')){
 }
 // autosubmit radio button
 if(document.querySelector('main.index')){
-  console.log(jkcsflj);
   $('.preference input').change(function(){
       $('form').submit();
   });

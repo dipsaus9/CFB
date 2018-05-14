@@ -80,7 +80,7 @@ const recipe = [
       'Worms'
     ],
     'description': 'döner kebab van oesterzwam op een pita met ingemaakt rode kool, harissa, kool salade, soyaïoli en gemarineerde gegrilde groentjes',
-    img: '/img/bloemkoolsalade.jpg'
+    img: '/img/oesterzwam.jpeg'
   },
   {
     'name': 'SALADE VAN MEERVAL',

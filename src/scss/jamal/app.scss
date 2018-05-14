@@ -160,11 +160,43 @@ main.index{
   }
   //Cycle choice
   .cycle-choice {
-    img {
-      max-width: 25vw;
+    .container {
+      height: 100%;
     }
+
     form {
+      margin-top: 40px;
+      display: block;
+      position: relative;
+      height: 50vh;
       padding: $space-m 0;
+    }
+
+    label {
+      position: absolute;
+      img {
+        width: 30vw;
+      }
+    }
+
+    .fish {
+      left: 0;
+      top: 0;
+    }
+
+    .worms {
+      top: 0;
+      right: 0;
+    }
+
+    .plants {
+      bottom: 0;
+      left: 0;
+    }
+
+    .bacteria {
+      bottom: 0;
+      right: 0;
     }
   }
 

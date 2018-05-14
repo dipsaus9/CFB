@@ -1,6 +1,6 @@
 .results-start{ width: 100vw; height: 100vh; max-width: 100%; max-height: 100%; transition: .6s ease-in-out; position: relative; left: 0; position: fixed;
   .slide{ height: 100vh; position: relative; background: $color-general; display: flex; flex-direction: column; align-items: center;
-    &-image{ width: 25%; margin: 0 auto; position: relative; margin-top: 25vh;
+    &-image{ width: 25%; margin: 0 auto; position: relative; margin-top: 15vh;
       img{ width: 100%; height: auto; border-radius: 50%; }
     }
     h2{ margin-top: 25px; transform: rotate(3deg); font-size: 2rem;}
@@ -13,7 +13,7 @@
 }
 .contolers{ transition: $transition;
   &.inactive{ opacity: 0; pointer-events: none; z-index: -1; }
-  span{ position: absolute; top: calc(25vh + 30px); width: 40px; height: 40px; background: transparent; left: 20px; display: block; z-index: $up; transform-origin: center center; cursor: pointer;
+  span{ position: fixed; top: calc(15vh + 100px); width: 40px; height: 40px; background: transparent; left: 20px; display: block; z-index: $up; transform-origin: center center; cursor: pointer;
     &:after{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(-45deg); position: absolute; left: 0; top: 26px; border-radius: 5px 0 5px 5px; }
     &:before{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(45deg); position: absolute; left: 0; top: 9px; border-radius: 5px 5px 0 5px; }
     &.next{ right: 20px; left: auto;}
@@ -72,4 +72,10 @@
     }
   }
 }
-main.pref{ overflow: hidden; max-width: 100%; max-height: 100%; position: relative; }
+main.pref{ overflow: hidden; max-width: 100%; max-height: 100%; position: relative;
+  .header{ display: flex; justify-content: flex-start; align-items: center; position: fixed; top: 0; left: 0; width: 100%; z-index: $onTop;
+    &.inactive{ z-index: -1; pointer-events: none; }
+    a, button{ margin: 0; padding: 25px; }
+    h3{ position: absolute; width: 100%; top: 12px; text-align: center; pointer-events: none; }
+  }
+}

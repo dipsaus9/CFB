@@ -7,6 +7,7 @@ router.get('/result', function(req, res){
 });
 
 router.post('/result', function(req, res){
+  console.log(req.body);
   let answer = req.body.ingredients;
   if(answer){
     let options = [];
@@ -18,7 +19,11 @@ router.post('/result', function(req, res){
       }
     }
     let randomNr = Math.floor(Math.random() * options.length);
-    res.render('result.ejs', {data: options[randomNr]});
+    let obj = {
+      data: options[randomNr],
+      answer: req.body.selected[0]
+    };
+    res.render('result.ejs', {data: obj});
   }
   else{
     res.render('index.ejs', {data: ''});

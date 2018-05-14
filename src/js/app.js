@@ -15,12 +15,13 @@ if(document.querySelector('main.pref')){
       });
     }
   }
-
-
   let resultButtons = document.querySelectorAll('article button');
   let sectionsToggle = document.querySelectorAll('.ingredients');
   for(let i = 0; i < resultButtons.length; i++){
     resultButtons[i].addEventListener('click', function(e){
+      document.querySelector('.header.first').classList.add('inactive');
+      document.querySelector('.header.second').classList.remove('inactive');
+
       document.querySelector('.results-start').classList.add('inactive');
       document.querySelector('.contolers').classList.add('inactive');
       for(let k = 0; k < sectionsToggle.length; k++){
@@ -29,16 +30,29 @@ if(document.querySelector('main.pref')){
       switch (true) {
         case e.target.classList.contains('fish-button'):
           document.querySelector('.fish-result').classList.add('active');
+          document.querySelector('input[type="hidden"]').setAttribute('value', 'fish');
           break;
         case e.target.classList.contains('environment-button'):
           document.querySelector('.environment-result').classList.add('active');
+          document.querySelector('input[type="hidden"]').setAttribute('value', 'environment');
           break;
         case e.target.classList.contains('plants-button'):
           document.querySelector('.plants-result').classList.add('active');
+          document.querySelector('input[type="hidden"]').setAttribute('value', 'plants');
           break;
         case e.target.classList.contains('bacteria-button'):
           document.querySelector('.bacteria-result').classList.add('active');
+          document.querySelector('input[type="hidden"]').setAttribute('value', 'bacteria');
           break;
+      }
+    });
+    document.querySelector('.back-button').addEventListener('click', function(){
+      document.querySelector('.header.first').classList.remove('inactive');
+      document.querySelector('.header.second').classList.add('inactive');
+      document.querySelector('.results-start').classList.remove('inactive');
+      document.querySelector('.contolers').classList.remove('inactive');
+      for(let k = 0; k < sectionsToggle.length; k++){
+        sectionsToggle[k].classList.remove('active');
       }
     });
   }
@@ -58,7 +72,7 @@ if(document.querySelector('main.index')){
   setTimeout(function() {
     document.querySelector('.start-screen').classList.remove('active');
     document.querySelector('.cycle-info').classList.add('active');
-  },10);
+  },2000);
 
 
 // toggle

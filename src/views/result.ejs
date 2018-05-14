@@ -1,7 +1,11 @@
 <% include base/head.ejs %>
 <main class="result">
-  <%= data.name %>
+  <h1>Your <%= data.answer %> meal</h1>
+  <div class="result-image">
+    <div class="result-image_img">
+    </div>
+  </div>
 </main>
-
+<%= data.data.name %>
 
 <% include base/footer.ejs %>

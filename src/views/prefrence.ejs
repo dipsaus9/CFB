@@ -1,5 +1,13 @@
 <% include base/head.ejs %>
 <main class="pref">
+  <div class="header first">
+      <a href="/" class="btn-back" href="/"><img src="img/chevleft.svg" alt=""></a>
+      <h3>More about the cycle</h3>
+  </div>
+  <div class="header second">
+      <button href="/" class="btn-back back-button" href="/"><img src="img/chevleft.svg" alt=""></button>
+      <h3>More about the cycle</h3>
+  </div>
   <div class="contolers">
     <span class="back">
     </span>
@@ -29,7 +37,7 @@
     </article>
     <article class="slide <% if('enviroment' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> enviroment">
       <div class="slide-image">
-        <img src="/img/fish.svg" alt="Image of element" />
+        <img src="/img/environment.svg" alt="Image of element" />
       </div>
       <h2>Environment</h2>
       <p>
@@ -63,7 +71,7 @@
       </div>
       <div class="result-content">
         <h3>Select your favorite ingredients</h3>
-        <form name="result" action="/result" method="post">
+        <form name="<%= data.data[i].role.toLowerCase()%>" action="/result" method="post">
           <% var maxNr = 0; %>
           <% for(let k = 0; k < data.recipe.length; k++){  %>
             <% for(let j = 0; j < data.recipe[k].cycle.length; j++){ %>
@@ -72,6 +80,7 @@
                   <% maxNr = maxNr + 1; %>
                   <% var randomNr = Math.floor(Math.random() * data.recipe[k].ingredients.length); %>
                   <% var className = data.recipe[k].ingredients[randomNr].toLowerCase().split(' ').join('_'); %>
+                  <input type="hidden" value="" name="selected" />
                   <label for="<%= className %>">
                     <input id="<%= className %>" type="radio" name="ingredients" value="<%= data.recipe[k].ingredients[randomNr] %>"/>
                     <%= data.recipe[k].ingredients[randomNr] %>

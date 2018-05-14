@@ -6,7 +6,10 @@ const recipe = [
       'Eieren',
       'Melk',
       'Zout',
-      'Water'
+      'Water',
+      'Jam',
+      'Honing',
+      'Kaas'
     ],
     'extra': [
       'Jam',
@@ -25,7 +28,9 @@ const recipe = [
       'Citroenmelisse dressing',
       'dadels',
       'amandel creamcheese',
-      'Water'
+      'Water',
+      'Geitenkaas',
+      'Brood'
     ],
     'extra': [
       'Geitenkaas',

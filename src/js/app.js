@@ -13,3 +13,8 @@ $('.results-start').slick({
   prevArrow: $('.back'),
   nextArrow: $('.next')
 });
+
+// autosubmit radio button
+$('input').change(function(){
+    $('form').submit();
+});

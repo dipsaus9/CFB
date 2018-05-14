@@ -14,7 +14,7 @@
     <p>
       Momenteel zijn er <span class="big-text">30</span> vissen in onze tank
     </p>
-    <button class="btn-main fish-button">Ingredients by Fish</button>
+    <button class="btn-main fish-button">Ingredients by <br> Fish</button>
   </article>
   <article class="slide <% if('bacteria' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> bacteria">
     <div class="slide-image">
@@ -24,7 +24,7 @@
     <p>
       Momenteel zijn er <span class="big-text">312.124.542</span> Bacterien in de tank
     </p>
-    <button class="btn-main fish-button">Ingredients by Bacteria</button>
+    <button class="btn-main fish-button">Ingredients by <br>Bacteria</button>
   </article>
   <article class="slide <% if('enviroment' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <% } %> enviroment">
     <div class="slide-image">
@@ -34,7 +34,7 @@
     <p>
       Momenteel zijn er <span class="big-text">23.000</span> vissen uit de grachten gehaald
     </p>
-    <button class="btn-main fish-button">Ingredients by Enviroment</button>
+    <button class="btn-main fish-button">Ingredients by <br>Enviroment</button>
   </article>
   <article class="slide <% if('plants' === data.answer.toLowerCase()){ %><%= 'slide-index-active' %> <%} %> plants">
     <div class="slide-image">
@@ -44,7 +44,41 @@
     <p>
       Momenteel zijn er <span class="big-text">400</span> planten in onze kas
     </p>
-    <button class="btn-main fish-button">Ingredients by Plants</button>
+    <button class="btn-main fish-button">Ingredients by <br>
+      <
+
+
+      Plants</button>
   </article>
 </section>
+<% for(let i = 0; i < data.data.length; i++){ %>
+  <section class="<%= data.data[i].role.toLowerCase()%>-result ingredients">
+    <div class="result-header">
+      <div class="result-image">
+
+      </div>
+      <div class="result-header_content">
+        <h2><%= data.data[i].role %></h2>
+        <p>
+          These ingredients are dependant on <%= data.data[i].role %>
+        </p>
+      </div>
+    </div>
+    <div class="result-content">
+      <h3>Select your favorite ingredients</h3>
+      <ul>
+        <% for(let k = 0; k < data.recipe.length; k++){  %>
+          <% for(let j = 0; j < data.recipe[k].cycle.length; j++){ %>
+            <% if(data.recipe[k].cycle[j].toLowerCase() === data.data[i].role.toLowerCase()){ %>
+              <li>
+                <%= data.recipe[k].name %>
+              </li>
+            <% } %>
+          <% } %>
+        <% } %>
+      </ul>
+    </div>
+  </section>
+<% } %>
+
 <% include base/footer.ejs %>

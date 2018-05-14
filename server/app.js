@@ -9,25 +9,25 @@ const prefrence = require('./routes/prefrence.js');
 const result = require('./routes/result.js');
 
 const routerSettings = {
-  init: function(){
-    this.basicSettings();
-    this.configureRoutes();
-  },
-  basicSettings: function(){
-    http.listen(3004, function () {
-      console.log('server is running on port 3004');
-    });
-    app.use(express.static('public'));
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extended: true}));
-    app.set('view engine', 'ejs');
-    app.set('views', 'src/views');
-  },
-  configureRoutes: function(){
-    app.use('/', home);
-    app.use('/', prefrence);
-    app.use('/', result);
-  }
+    init: function(){
+        this.basicSettings();
+        this.configureRoutes();
+    },
+    basicSettings: function(){
+        http.listen(1900, function () {
+            console.log('server is running on port 1900');
+        });
+        app.use(express.static('public'));
+        app.use(bodyParser.json());
+        app.use(bodyParser.urlencoded({extended: true}));
+        app.set('view engine', 'ejs');
+        app.set('views', 'src/views');
+    },
+    configureRoutes: function(){
+        app.use('/', home);
+        app.use('/', prefrence);
+        app.use('/', result);
+    }
 };
 
 routerSettings.init();

@@ -2,10 +2,34 @@
 <main class="result">
   <h1>Your <%= data.answer %> meal</h1>
   <div class="result-image">
-    <div class="result-image_img">
+    <div class="result-image_img" style="background-image: url('<%= data.data.img %>')">
     </div>
   </div>
+  <h2><%= data.data.name %></h2>
+  <% for(let i = 0; i < data.data.cycle.length; i++){ %>
+    <div class="result-info">
+      <img src="/img/<%= data.data.cycle[i].toLowerCase() %>.svg" alt="image">
+      <% if(data.data.cycle[i].toLowerCase() === 'bacteria'){ %>
+        <p>
+          Er zijn 2500 bacterien nodig geweest tot voor het onstaan van voedsel voor de planten in de kas. Op dit moment zijn er 312.421.212 bacterien op dit moment.
+        </p>
+      <% } else if(data.data.cycle[i].toLowerCase() === 'plants'){ %>
+        <p>
+          Er zijn 300 verschillende planten die zorgen voor onze kruiden in de keuken
+        </p>
+      <% } else if(data.data.cycle[i].toLowerCase() === 'fish'){ %>
+        <p>
+          Er zijn in onze tank 30 vissen die zorgen voor amonia. Amonia wordt omgezet naar bacterien die voedsel maken voor onze planten.
+        </p>
+      <% } else if(data.data.cycle[i].toLowerCase() === 'environment'){ %>
+        <p>
+          Er worden op dit moment 1000 ganzen weggegooid omdat ze niet gebruikt worden. Wij gebruiken dit voor een heerlijk broodje gans.
+        </p>
+      <% } %>
+    </div>
+    <% } %>
+    <a href="/" class="again">Different meal</a>
+    <a href="/" class="order btn btn-main">Order</a>
 </main>
-<%= data.data.name %>
 
 <% include base/footer.ejs %>

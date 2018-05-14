@@ -19,7 +19,8 @@ const recipe = [
     'cycle': [
       'Plants'
     ],
-    'description': 'Pannekoeken voor grote en kleine Kids! Geserveerd met een topping naar keuze'
+    'description': 'Pannekoeken voor grote en kleine Kids! Geserveerd met een topping naar keuze',
+    img: '/img/pannenkoeken.jpg'
   },
   {
     'name': 'KLEURRIJKE BLOEMKOOL SALADE',
@@ -40,7 +41,8 @@ const recipe = [
       'Plants',
       'Bacteria',
     ],
-    'description': 'met verse groene kruiden, gekarameliseerde rabarber, citroenmelisse dressing en dadels gevuld met amandel creamcheese'
+    'description': 'met verse groene kruiden, gekarameliseerde rabarber, citroenmelisse dressing en dadels gevuld met amandel creamcheese',
+    img: '/img/bloemkoolsalade.jpg'
   },
   {
     'name': 'BROODJE ONGEWENSTE GANS',
@@ -57,7 +59,8 @@ const recipe = [
       'Bacteria',
       'Fish'
     ],
-    'description': 'gerookte Schipholgans, geserveerd op een desembroodje met zuur, gekarameliseerde sjalotjes en een mierikswortel-yoghurt saus'
+    'description': 'gerookte Schipholgans, geserveerd op een desembroodje met zuur, gekarameliseerde sjalotjes en een mierikswortel-yoghurt saus',
+    img: '/img/gans.jpg'
   },
   {
     'name': 'CEUVEL KEBAB',
@@ -76,7 +79,8 @@ const recipe = [
       'Bacteria',
       'Worms'
     ],
-    'description': 'döner kebab van oesterzwam op een pita met ingemaakt rode kool, harissa, kool salade, soyaïoli en gemarineerde gegrilde groentjes'
+    'description': 'döner kebab van oesterzwam op een pita met ingemaakt rode kool, harissa, kool salade, soyaïoli en gemarineerde gegrilde groentjes',
+    img: '/img/bloemkoolsalade.jpg'
   },
   {
     'name': 'SALADE VAN MEERVAL',
@@ -93,7 +97,8 @@ const recipe = [
       'Plants',
       'Fish'
     ],
-    'description': 'Lekker eenvoudige salade met een minder gekende zoetwatervis'
+    'description': 'Lekker eenvoudige salade met een minder gekende zoetwatervis',
+    img: '/img/meerval.jpg'
   },
   {
     'name': 'GEVULDE KOOL',
@@ -112,7 +117,8 @@ const recipe = [
       'Plants',
       'Bacteria'
     ],
-    'description': 'pakketjes van groene koolbladeren gevuld met shiitake, noten & zaden, kervel en pastinaak, gefrituurde boerenkool en een paddenstoelen-miso jus'
+    'description': 'pakketjes van groene koolbladeren gevuld met shiitake, noten & zaden, kervel en pastinaak, gefrituurde boerenkool en een paddenstoelen-miso jus',
+    img: '/img/gevulde-kool.jpg'
   },
   {
     'name': 'HARTIGE WORTEL TARTELETTE',
@@ -128,7 +134,8 @@ const recipe = [
       'Plants',
       'Bacteria'
     ],
-    'description': 'met geroosterde baby worteltjes & kervelwortels, mizuna blaadjes en mierikswortelyoghurt saus'
+    'description': 'met geroosterde baby worteltjes & kervelwortels, mizuna blaadjes en mierikswortelyoghurt saus',
+    img: '/img/wortel.jpeg'
   },
   {
     'name': 'BISQUE VAN RIVIERKREEFT',
@@ -145,7 +152,8 @@ const recipe = [
       'Fish',
       'Environment'
     ],
-    'description': 'soepje van rivierkreeftjes uit de Amsterdamse grachten, tomaat, dragon, room en port'
+    'description': 'soepje van rivierkreeftjes uit de Amsterdamse grachten, tomaat, dragon, room en port',
+    img: '/img/rivierkreeft.jpg'
   },
 ];
 

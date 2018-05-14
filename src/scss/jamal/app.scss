@@ -19,14 +19,20 @@ h3 {
   font-size: 1.2em;
   line-height: 1.3;
 }
+
 //Button & custom link styles
 button {
   margin: auto;
+  font-size: 1em;
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  border: none;
   img {
     width: 1em;
     height: 1em;
   }
 }
+
 
 .btn {
   text-align: center;

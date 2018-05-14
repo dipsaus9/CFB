@@ -21,7 +21,6 @@ if(document.querySelector('main.pref')){
   let sectionsToggle = document.querySelectorAll('.ingredients');
   for(let i = 0; i < resultButtons.length; i++){
     resultButtons[i].addEventListener('click', function(e){
-      console.log(123123);
       document.querySelector('.results-start').classList.add('inactive');
       document.querySelector('.contolers').classList.add('inactive');
       for(let k = 0; k < sectionsToggle.length; k++){
@@ -43,6 +42,12 @@ if(document.querySelector('main.pref')){
       }
     });
   }
+  $('input').on('change', function(){
+    var test = $(this).closest('label');
+    $('label').removeClass('active');
+    console.log($('input:checked'));
+    test.addClass('active');
+  });
 }
 // autosubmit radio button
 if(document.querySelector('main.index')){

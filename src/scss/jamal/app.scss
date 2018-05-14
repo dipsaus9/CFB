@@ -57,28 +57,6 @@ button {
     position: relative;
     transition: $transition;
     clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0% 50%);
-    // &:before{
-    //   content: '';
-    //   display: block;
-    //   background: inherit;
-    //   width: 20px;
-    //   height: 100%;
-    //   position: absolute;
-    //   left: -19px;
-    //   top: 0;
-    //   clip-path: polygon(0 50%, 100% 100%, 100% 0);
-    // }
-    // &:after{
-    //   content: '';
-    //   display: block;
-    //   background: inherit;
-    //   width: 20px;
-    //   height: 100%;
-    //   position: absolute;
-    //   left: calc(100% - 1px);
-    //   top: 0;
-    //   clip-path: polygon(100% 50%, 0 100%, 0 0);
-    // }
     &:hover{
       background: darken($color-button, 10%);
     }
@@ -117,7 +95,7 @@ main.index{
       height: 1.5em;
     }
     h3{
-      padding: 0 20px; 
+      padding: 0 20px;
     }
     .info, .btn-close {
       right: 0;

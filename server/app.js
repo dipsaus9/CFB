@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 //all pages
 const home = require('./routes/home.js');
 const prefrence = require('./routes/prefrence.js');
+const result = require('./routes/result.js');
 
 const routerSettings = {
     init: function(){
@@ -25,6 +26,7 @@ const routerSettings = {
     configureRoutes: function(){
         app.use('/', home);
         app.use('/', prefrence);
+        app.use('/', result);
     }
 };
 

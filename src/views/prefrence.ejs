@@ -52,7 +52,7 @@
     <section class="<%= data.data[i].role.toLowerCase()%>-result ingredients">
       <div class="result-header">
         <div class="result-image">
-
+          <img src="/img/<%= data.data[i].role.toLowerCase() %>.svg" alt="Image of element" />
         </div>
         <div class="result-header_content">
           <h2><%= data.data[i].role %></h2>
@@ -63,7 +63,7 @@
       </div>
       <div class="result-content">
         <h3>Select your favorite ingredients</h3>
-        <form action="/result" method="post">
+        <form name="result" action="/result" method="post">
           <% var maxNr = 0; %>
           <% for(let k = 0; k < data.recipe.length; k++){  %>
             <% for(let j = 0; j < data.recipe[k].cycle.length; j++){ %>

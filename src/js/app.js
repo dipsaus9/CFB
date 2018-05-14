@@ -11,7 +11,9 @@ $('.results-start').slick({
   slidesToShow: 1,
   initialSlide: number,
   prevArrow: $('.back'),
-  nextArrow: $('.next')
+  nextArrow: $('.next'),
+  speed: 300,
+  dots: true
 });
 
 // autosubmit radio button

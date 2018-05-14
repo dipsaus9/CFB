@@ -55,24 +55,6 @@ const recipe = [
     'description': 'gerookte Schipholgans, geserveerd op een desembroodje met zuur, gekarameliseerde sjalotjes en een mierikswortel-yoghurt saus'
   },
   {
-    'name': 'KLEURRIJKE BLOEMKOOL SALADE',
-    'ingredients': [
-      'Kruiden uit eigen tuin',
-      'Citroenmelisse dressing',
-      'Dadels',
-      'Amandel creamcheese',
-    ],
-    'extra': [
-      'Geitenkaas',
-      'Brood'
-    ],
-    'cycle': [
-      'Plants',
-      'Bacteria',
-    ],
-    'description': 'met verse groene kruiden, gekarameliseerde rabarber, citroenmelisse dressing en dadels gevuld met amandel creamcheese'
-  },
-  {
     'name': 'CEUVEL KEBAB',
     'ingredients': [
       'oesterzwam',

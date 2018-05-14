@@ -11,10 +11,19 @@
   }
 }
 .contolers{
-  span{ position: absolute; top: calc(25vh + 20px); width: 40px; height: 40px; background: transparent; left: 20px; display: block; z-index: $up; transform-origin: center center; cursor: pointer;
+  span{ position: absolute; top: calc(50vh - 20px); width: 40px; height: 40px; background: transparent; left: 20px; display: block; z-index: $up; transform-origin: center center; cursor: pointer;
     &:after{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(-45deg); position: absolute; left: 0; top: 26px; border-radius: 5px 0 5px 5px; }
     &:before{ content: ''; display: block; width: 70%; height: 5px; background: white; transform: rotate(45deg); position: absolute; left: 0; top: 9px; border-radius: 5px 5px 0 5px; }
     &.next{ right: 20px; left: auto;}
     &.back{ transform: rotate(180deg); }
+  }
+}
+
+.slick-dots{ position: absolute; top: calc(100vh - 40px); left: 50vw; transform: translate(-50%, -50%);
+  li{ display: inline-block; margin: 0 10px;
+    button{ box-shadow: none; border: none; width: 15px; height: 15px; background: white; border-radius: 50%; text-indent: -9999px; opacity: .7; transition: .3s; }
+    &.slick-active{
+      button{ width: 20px; height: 20px; opacity: 1; }
+    }
   }
 }

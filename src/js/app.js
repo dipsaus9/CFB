@@ -30,19 +30,19 @@ if(document.querySelector('main.pref')){
       switch (true) {
         case e.target.classList.contains('fish-button'):
           document.querySelector('.fish-result').classList.add('active');
-          document.querySelector('input[type="hidden"]').setAttribute('value', 'fish');
+          $('input[type="hidden"]').val('fish');
           break;
         case e.target.classList.contains('environment-button'):
           document.querySelector('.environment-result').classList.add('active');
-          document.querySelector('input[type="hidden"]').setAttribute('value', 'environment');
+          $('input[type="hidden"]').val('environment');
           break;
         case e.target.classList.contains('plants-button'):
           document.querySelector('.plants-result').classList.add('active');
-          document.querySelector('input[type="hidden"]').setAttribute('value', 'plants');
+          $('input[type="hidden"]').val('plants');
           break;
         case e.target.classList.contains('bacteria-button'):
           document.querySelector('.bacteria-result').classList.add('active');
-          document.querySelector('input[type="hidden"]').setAttribute('value', 'bacteria');
+          $('input[type="hidden"]').val('bacteria');
           break;
       }
     });

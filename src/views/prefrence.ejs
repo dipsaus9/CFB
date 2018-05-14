@@ -56,6 +56,7 @@
       <button class="btn-main plants-button">Ingredients by <br> Plants</button>
     </article>
   </section>
+  <% let allData = []; %>
   <% for(let i = 0; i < data.data.length; i++){ %>
     <section class="<%= data.data[i].role.toLowerCase()%>-result ingredients">
       <div class="result-header">
@@ -77,14 +78,17 @@
             <% for(let j = 0; j < data.recipe[k].cycle.length; j++){ %>
               <% if(data.recipe[k].cycle[j].toLowerCase() === data.data[i].role.toLowerCase()){ %>
                 <% if(maxNr < 4){ %>
-                  <% maxNr = maxNr + 1; %>
                   <% var randomNr = Math.floor(Math.random() * data.recipe[k].ingredients.length); %>
                   <% var className = data.recipe[k].ingredients[randomNr].toLowerCase().split(' ').join('_'); %>
                   <input type="hidden" value="" name="selected" />
-                  <label for="<%= className %>">
-                    <input id="<%= className %>" type="radio" name="ingredients" value="<%= data.recipe[k].ingredients[randomNr] %>"/>
-                    <%= data.recipe[k].ingredients[randomNr] %>
-                  </label>
+                  <% if(!allData.includes(data.recipe[k].ingredients[randomNr])){ %>
+                    <% allData.push(data.recipe[k].ingredients[randomNr]); %>
+                    <label for="<%= className %>">
+                      <input id="<%= className %>" type="radio" name="ingredients" value="<%= data.recipe[k].ingredients[randomNr] %>"/>
+                        <% maxNr = maxNr + 1; %>
+                        <%= data.recipe[k].ingredients[randomNr] %>
+                    </label>
+                  <% } %>
                 <% } %>
               <% } %>
             <% } %>

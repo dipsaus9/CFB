@@ -19,9 +19,16 @@ router.post('/result', function(req, res){
       }
     }
     let randomNr = Math.floor(Math.random() * options.length);
+    let newAnswer;
+    if(req.body.selected.constructor === Array){
+      newAnswer = req.body.selected[0];
+    }
+    else{
+      newAnswer = req.body.selected;
+    }
     let obj = {
       data: options[randomNr],
-      answer: req.body.selected[0]
+      answer: newAnswer
     };
     res.render('result.ejs', {data: obj});
   }

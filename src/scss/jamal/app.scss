@@ -6,7 +6,6 @@ body {
   width: 100%;
   position: relative;
 }
-
 h1, h2, h3, h4, h5, h6, a, p {
   color: $white;
 }
@@ -20,16 +19,6 @@ h3 {
   font-size: 1.2em;
   line-height: 1.3;
 }
-
-//General section styles
-.container {
-  padding: $space-m;
-}
-
-.header {
-  position: relative;
-}
-
 //Button & custom link styles
 .btn {
   text-align: center;
@@ -82,95 +71,104 @@ h3 {
   }
 }
 
-//header
-.info img, .btn-back img, .btn-close img {
-  display: block;
-  width: 1em;
-  height: 1em;
-}
-
-.header {
-  .info, .btn-back, .btn-close {
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    width: 1.5em;
-    height: 1.5em;
-  }
-
-  .info, .btn-close {
-    right: 0;
-  }
-
-  .btn-back {
-    left: 0;
-  }
-}
-
-//Start screen
-.start-screen {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("/img/homescreen.jpg");
-  background-size: cover;
-  background-position: center center;
-  max-width: 100vw;
-  width: 100vw;
-  position: absolute;
-  z-index: $onTop;
-}
-
-//Cycle info
-.cycle-info {
-  img {
-    max-height: 30vh;
-  }
-}
-
-//Cycle choice
-.cycle-choice {
-  img {
-    max-width: 25vw;
-  }
-
-  form {
-    padding: $space-m 0;
-  }
-}
-
-//Overlay
-.content-block {
-  padding: $space-m 0;
-  img {
-    max-width: 40vw;
-  }
-}
-
-//Section states styling
-main {
+main.index{
   overflow: hidden;
   position: relative;
   height: 100vh;
   width: 100vw;
-}
+  //General section styles
+  .container {
+    padding: $space-m;
+  }
 
-section {
-  position: absolute;
-  margin: auto;
-  height: 100vh;
-  text-align: center;
-  max-width: 40em;
-  left: -40em;
-  transition: .6s ease-in-out;
-  z-index: -1;
-  pointer-events: none;
+  .header {
+    position: relative;
+  }
 
-  &.active {
-    left: 0;
+
+
+  //header
+  .info img, .btn-back img, .btn-close img {
+    display: block;
+    width: 1em;
+    height: 1em;
+  }
+
+  .header {
+    .info, .btn-back, .btn-close {
+      position: absolute;
+      top: 0;
+      display: flex;
+      align-items: center;
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    .info, .btn-close {
+      right: 0;
+    }
+
+    .btn-back {
+      left: 0;
+    }
+  }
+
+  //Start screen
+  .start-screen {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/homescreen.jpg");
+    background-size: cover;
+    background-position: center center;
+    max-width: 100vw;
+    width: 100vw;
+    position: absolute;
     z-index: $onTop;
-    pointer-events: all;
+  }
+
+  //Cycle info
+  .cycle-info {
+    img {
+      max-height: 30vh;
+    }
+  }
+
+  //Cycle choice
+  .cycle-choice {
+    img {
+      max-width: 25vw;
+    }
+
+    form {
+      padding: $space-m 0;
+    }
+  }
+
+  //Overlay
+  .content-block {
+    padding: $space-m 0;
+    img {
+      max-width: 40vw;
+    }
+  }
+  
+  section {
+    position: absolute;
+    margin: auto;
+    height: 100vh;
+    text-align: center;
+    max-width: 40em;
+    left: -40em;
+    transition: .6s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+
+    &.active {
+      left: 0;
+      z-index: $onTop;
+      pointer-events: all;
+    }
   }
 }
